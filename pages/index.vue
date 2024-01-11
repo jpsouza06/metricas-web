@@ -95,13 +95,13 @@ export default {
 
    methods: {
       async onChangeFileInput(event) {
+         const runtimeConfig = useRuntimeConfig()
          this.carregandoDados = true
          this.file = event.target.files ? event.target.files[0] : null;
 
          const formData = new FormData();
          formData.append('file', this.file);
-
-         const response = await $fetch('http://localhost:3334/metricas', {
+         const response = await $fetch(`${runtimeConfig.public.API_BASE_URL}/metricas`, {
             method: 'POST',
             body: formData,
          });
@@ -117,7 +117,6 @@ export default {
       },
       calculaMedia(objeto) {
          const arrayDeValores = Object.values(objeto);
-         console.log(arrayDeValores)
          return arrayDeValores.reduce((soma, valor) => soma + valor, 0) / arrayDeValores.length;
       }
    },
