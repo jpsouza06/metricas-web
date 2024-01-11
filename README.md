@@ -1,70 +1,51 @@
 # Metricas Web
+Métricas é um site onde é possivel selecionar um arquivo excel e será exibido algumas métricas.
+
+A aplicação pode ser visualizada em: <a>https://metricas-web.vercel.app/</a>
+
 
 ## Como rodar a aplicação
 
-Instale as dependências:
+- Clone a aplicação
+  ```
+  git clone https://github.com/jpsouza06/metricas-web.git
+  ```
 
-```bash
-# npm
-npm install
+- Instale as dependências
+  ```
+  npm install
+  ```
 
-# pnpm
-pnpm install
+## Como executar a aplicação em ambiente de desenvolvimento:
+- Inicie a aplicação:
+  ```
+  npm run dev
+  ```
 
-# yarn
-yarn install
+- Use a aplicação:
+  ```
+  http://localhost:3333
+  ```
 
-# bun
-bun install
-```
+## Como executar a aplicação em ambiente de produção:
 
-## Desenvolvimento
+- Clone a aplicação
+  ```
+  git clone https://github.com/jpsouza06/metricas-web.git
+  ```
+  
+- Instale as dependências
+  ```
+  npm i
+  ```
 
-```bash
-# npm
-npm run dev
+- Crie o build da aplicação
+  ```
+  npm run build
+  ```
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-O servidor será iniciado por padrão em: `http://localhost:3000`
-
-## Produção
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Ver um preview do build na maquina local:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
+- Inicie a aplicação
+  ```
+  npm run preview
+  ```
 
