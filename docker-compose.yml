@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  analytics-web:
+    build:
+      context: .
+      args:
+        BASEURL: https://metricas-api.onrender.com
+    ports:
+      - 3000:3000
+    environment:
+      - API_BASE_URL=https://metricas-api.onrender.com

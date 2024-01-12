@@ -16,6 +16,8 @@ A aplicação pode ser utilizada em: <a>https://metricas-web.vercel.app/</a>
   npm install
   ```
 
+  Crie o arquivo `.env` seguindo o arquivo de exemplo `.env.example`
+
 ## Como executar a aplicação em ambiente de desenvolvimento:
 - Inicie a aplicação:
   ```
@@ -35,6 +37,6 @@ A aplicação pode ser utilizada em: <a>https://metricas-web.vercel.app/</a>
 
 - Inicie a aplicação
   ```
-  npm run preview
+  npm run start
   ```
 
